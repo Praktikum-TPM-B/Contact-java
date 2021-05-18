@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/form_title"
+        android:textSize="30sp"
+        android:text="@string/create_contact"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/montserrat_bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/form_desc"
+        android:textSize="18sp"
+        android:layout_marginStart="30dp"
+        android:layout_width="wrap_content"
+        android:text="@string/create_a_new_contact"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blueOrigin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/form_title" />
+
+    <EditText
+        android:id="@+id/input_name"
+        android:hint="@string/inpput_name"
+        android:minHeight="50dp"
+        android:textSize="15sp"
+        android:drawablePadding="12dp"
+        android:layout_marginTop="60dp"
+        android:paddingHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blackOrigin"
+        android:layout_marginHorizontal="30dp"
+        android:textColorHint="@color/blackSoft"
+        android:drawableStart="@drawable/input_ic_person"
+        android:background="@drawable/layout_custom_input"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/form_desc" />
+
+    <EditText
+        android:id="@+id/input_mobile"
+        android:hint="@string/input_mobile"
+        android:textSize="15sp"
+        android:minHeight="50dp"
+        android:inputType="phone"
+        android:drawablePadding="12dp"
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blackOrigin"
+        android:layout_marginHorizontal="30dp"
+        android:textColorHint="@color/blackSoft"
+        android:drawableStart="@drawable/input_ic_mobile"
+        android:background="@drawable/layout_custom_input"
+        app:layout_constraintTop_toBottomOf="@+id/input_name"/>
+
+    <EditText
+        android:id="@+id/input_address"
+        android:hint="@string/input_address"
+        android:textSize="15sp"
+        android:minHeight="50dp"
+        android:drawablePadding="12dp"
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:textColor="@color/blackOrigin"
+        android:textColorHint="@color/blackSoft"
+        android:background="@drawable/layout_custom_input"
+        android:drawableStart="@drawable/input_ic_address"
+        app:layout_constraintTop_toBottomOf="@+id/input_mobile"/>
+
+    <TextView
+        android:id="@+id/label_gender"
+        android:text="@string/label_gender"
+        android:layout_gravity="start"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blackSoft"
+        android:fontFamily="@font/montserrat_bold"
+        app:layout_constraintTop_toBottomOf="@+id/input_address"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/sectionGender"
+        android:layout_gravity="start"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/label_gender">
+
+        <RadioGroup
+            android:id="@+id/radioGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:text="@string/male"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/radio_button"
+                android:buttonTint="@color/radio_button"
+                android:button="@drawable/layout_ic_radio_button"
+                android:background="@drawable/layout_radio_button"/>
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="140dp"
+                android:text="@string/female"
+                android:layout_marginStart="10dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/radio_button"
+                android:buttonTint="@color/radio_button"
+                android:button="@drawable/layout_ic_radio_button"
+                android:background="@drawable/layout_radio_button"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F2F7FF"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:text="Cancel"
+            android:textSize="15sp"
+            android:layout_marginEnd="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blueOrigin"
+            android:backgroundTint="@color/blueOrigin"
+            android:fontFamily="@font/montserrat_semi_bold"
+            style="?android:attr/borderlessButtonStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:text="Save"
+            android:textSize="15sp"
+            android:layout_marginStart="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blueOrigin"
+            android:backgroundTint="@color/blueOrigin"
+            android:fontFamily="@font/montserrat_semi_bold"
+            style="?android:attr/borderlessButtonStyle"
+            android:windowSoftInputMode="adjustResize"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

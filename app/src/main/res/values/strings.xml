@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Contact-room-database-java</string>
+    <string name="mobile">MOBILE</string>
+    <string name="address">ADDRESS</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="create_contact">Create Contact</string>
+    <string name="create_a_new_contact">create a new contact</string>
+    <string name="inpput_name">Name</string>
+    <string name="input_mobile">Mobile</string>
+    <string name="input_address">Address</string>
+    <string name="label_gender">GENDER</string>
 </resources>
