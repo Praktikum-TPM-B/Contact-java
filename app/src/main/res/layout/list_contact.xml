@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/cv_item"
+    android:id="@+id/card_contact"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:backgroundTint="@android:color/transparent"
@@ -26,7 +26,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent">
             <TextView
-                android:id="@+id/tv_item_name_image"
+                android:id="@+id/contact_img_name"
                 android:text="MK"
                 android:textSize="17sp"
                 android:textStyle="bold"
@@ -49,7 +49,7 @@
             app:layout_constraintStart_toEndOf="@+id/img_profile">
 
             <TextView
-                android:id="@+id/contact_content_name"
+                android:id="@+id/contact_name"
                 android:textSize="17sp"
                 android:textStyle="bold"
                 android:layout_width="wrap_content"
@@ -57,7 +57,7 @@
                 android:textColor="@color/blueSecond" />
 
             <TextView
-                android:id="@+id/contact_content_mobile"
+                android:id="@+id/contact_mobile"
                 android:textSize="14sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

@@ -30,7 +30,7 @@
 
                 <!-- Name -->
                 <TextView
-                    android:id="@+id/tv_name"
+                    android:id="@+id/bs_profile_name"
                     android:textSize="18sp"
                     android:gravity="center"
                     android:layout_marginTop="68dp"
@@ -53,7 +53,7 @@
                     android:textColor="@color/blackOrigin"
                     android:fontFamily="@font/montserrat_bold"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+                    app:layout_constraintTop_toBottomOf="@+id/bs_profile_name" />
 
                 <!-- Mobile -->
                 <TextView
@@ -123,7 +123,7 @@
 
         <!-- Image -->
         <LinearLayout
-            android:id="@+id/bs_img_profile"
+            android:id="@+id/bs_profile_img"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_centerHorizontal="true"
@@ -131,7 +131,7 @@
             android:gravity="center">
 
             <TextView
-                android:id="@+id/bs_name_image"
+                android:id="@+id/bs_profile_name_image"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/blueOrigin"
@@ -155,7 +155,7 @@
 
         <!-- Edit -->
         <Button
-            android:id="@+id/edit_button"
+            android:id="@+id/bs_profile_edit_button"
             android:textSize="12sp"
             android:text="@string/edit"
             android:layout_marginEnd="150dp"
@@ -173,7 +173,7 @@
 
         <!-- Delete -->
         <Button
-            android:id="@+id/delete_button"
+            android:id="@+id/bs_profile_delete_button"
             android:textSize="12sp"
             android:text="@string/delete"
             android:layout_width="wrap_content"
