@@ -1,5 +1,6 @@
 # Contact 
 ## Room Database Implementation (SQLite)
+[![Contact Build](https://github.com/Praktikum-TPM-B/Contact-java/actions/workflows/gradle.yml/badge.svg)](https://github.com/Praktikum-TPM-B/Contact-java/actions/workflows/gradle.yml)
 
 ## Author
 123180176 </br>
